@@ -1,0 +1,62 @@
+div {
+  animation: premierAnim 4s;
+  
+
+}
+@keyframes premierAnim {
+    0% {left: 0px;
+        top: 0%; 
+      } /* 0% */
+
+
+   25% {left: 30%;
+  top: 0;} /* 100% */
+
+  50% {top:30%;
+    left: 30%;
+
+  } 
+
+  75% {left: 0;
+    top: 30% ;
+
+  } 
+
+  100% {
+    left: 0;
+    top: 0;
+  } 
+
+
+}
+
+#bounce-title{
+animation-name: bounce;
+animation: bounce 1s infinite alternate ease-in-out;
+ position: relative;
+
+
+
+} 
+
+@keyframes bounce {
+from{
+  transform: scaleY(1);
+  transform: scaleX(2);
+  
+  transform-origin: 0 0;
+  bottom: 0px;
+  
+} 
+
+to{
+  /* left:0; */
+  /* top: 40px; */
+  transform:scaleY(2);
+  transform: scaleX(1);
+  
+  transform-origin: 0 0;
+  bottom: 100px;
+} 
+
+} 
